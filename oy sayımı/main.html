@@ -1,0 +1,49 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=”stylesheet” href=”css/bootstrap.css”>
+    <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+    <title>Cumhurbaşkanlığı Oy Sayım Çetelesi</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h1>28 Mayıs 2023 Cumhurbaşkanlığı Oy Sayım Çetelesi</h1>
+                <button style="background-color:rgb(10, 10, 114);color:white;font-size:1.5em;border-radius:4px;padding:
+                15px 32px; margin-right: 20%" onclick="reset()">Sıfırla</button>
+                <h1>Toplam Oy Sayısı:</h1>
+                <span style="font-size: 3.5em;" id="counter4">0</span>
+                <hr>  
+            </div>
+
+            <div class="col-sm">
+                <div class="vertical-line"></div>
+                <img src="Erdogan.png" class="img1">
+                <h2 style="position: absolute;left: 30%;top:40%">Recep Tayyip Erdoğan</h2>
+                <button class="button" style="background-color: green;width:10%;height:5%;position:absolute;left:32%;top:50%" onclick="incrementR()">Oy Ekle</button>
+                <span style="position:absolute; left:36%;top:55%;font-size:3.5em;" id="counter">0</span>
+                <button class="button" style="background-color: red;width:10%;height:5%;position:absolute;left:32%;top:62%" onclick="decrementR()">Oy Çıkar</button>
+
+                
+                <img src="Kilicdaroglu.png" class="img2">
+                <h2 style="position: absolute;left: 57%;top:40%">Kemal Kılıçdaroğlu</h2>
+                <button class="button" style="background-color: green;width:10%;height:5%;position:absolute;left:58%;top:50%" onclick="incrementK()">Oy Ekle</button>
+                <span style="position:absolute; left:62%;top:55%;font-size:3.5em;"id="counter2">0</span>
+                <button class="button" style="background-color: red;width:10%;height:5%;position:absolute;left:58%;top:62%" onclick="decrementK()">Oy Çıkar</button>
+                <h2 style="position: absolute;left:45%;top:70%">Geçersiz Oylar</h2>
+                <button class="button" style="background-color: green;width:10%;height:5%;position:absolute;left:44.5%;top:77%" onclick="incrementG()">Oy Ekle</button>
+                <span style="position:absolute; left:48.5%;top:82%;font-size:3.5em;"id="counter3">0</span>
+                <button class="button" style="background-color: red;width:10%;height:5%;position:absolute;left:44.5%;top:89%" onclick="decrementG()">Oy Çıkar</button>
+            </div>
+
+        </div>
+
+    </div>
+     
+    
+    <script src="main.js"></script>
+</body>
+</html>

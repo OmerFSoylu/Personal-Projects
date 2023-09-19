@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.container-h {
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.container-v {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+
+
+h2 {
+  margin-left: 28%;
+}
+h3 {
+  font-size: 1.75em;
+  text-align: center;
+}
+.reset-button {
+  background-color:rgb(211, 47, 47);
+  position: relative;
+  color: white;
+  font-size: larger;
+  border-radius: 4px;
+  width: 4em;
+  height: 2em;
+  border: none;
+
+}
+
+.oy-ekle {
+  background-color: rgb(25, 118, 210);
+  color: white;
+  width: 5em;
+  height: 2em;
+  font-size: xx-large;
+  border-radius: 8px;
+  border: none;
+}
+
+.oy-sayısı {
+  font-size: 3em;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.oy-çıkar {
+  border: 1px solid rgba(211, 47, 47, 0.5);
+  color: rgb(211, 47, 47);
+  background-color: transparent;
+  border-radius: 4px;
+  width: 5em;
+  height: 2em;
+  font-size: large;
+  font-weight: 200;
+}
+
+hr {
+  border: none; /* Remove the default line */
+  height: 1.5px; /* Set the height to make it thick */
+  background-color: #000; /* Set the line color (replace with your desired color) */
+  width: 40em; /* Set the specific width of the line */
+  margin: 0 auto; /* Center the line horizontally (if needed) */
+}
+
+.vertical-line {
+  width: 2px;
+  height: 50vh; 
+  background-color: #000; 
+  position: relative;
+  transform: translateX(-50%);
+}
+
+
+.img {
+  width: 6em;
+  height: 7.5em;
+}

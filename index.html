@@ -1,0 +1,47 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumhurbaşkanlığı Oy Sayım Çetelesi</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <div class="container-h">
+        <h2>28 Mayıs 2023 Cumhurbaşkanlığı Oy Sayım Çetelesi</h2>
+        <button class="reset-button" onclick="reset()">Sıfırla</button>
+    </div>
+
+    <hr>
+    <h3 style="font-weight: 700; margin-bottom: 0.5em;">Toplam Oy </h3>
+    <p class="oy-sayısı" id="counter4">0</p>
+
+    <div class="container-h">
+        <div class="container-v" style="margin-left: 30%;">
+            <img src="Erdogan.png" class="img">
+            <p style="font-size: 1.5em; font-weight: bolder;">Recep Tayyip Erdoğan</p>
+            <button class="oy-ekle" onclick="incrementR()">Oy Ekle</button>
+            <p class="oy-sayısı" id="counter">0</p>
+            <button class="oy-çıkar" onclick="decrementR()">Oy Çıkar</button>
+    
+        </div>
+        <div class="vertical-line"></div>
+        <div class="container-v">
+            <img src="Kilicdaroglu.png" class="img">
+            <p style="font-size: 1.5em; font-weight: bolder;">Kemal Kılıçdaroğlu</p>
+            <button class="oy-ekle" onclick="incrementK()">Oy Ekle</button>
+            <p class="oy-sayısı" id="counter2">0</p>
+            <button class="oy-çıkar" onclick="decrementK()">Oy Çıkar</button>
+        </div>
+    </div>
+    <hr>
+    <h3 style="font-weight: 700; margin-bottom: 0.5em;">Geçersiz Oy </h3>
+    <p class="oy-sayısı" id="counter3">0</p>
+    <div class="container-h" style="margin-left: 40%; gap: 1em;">
+        <button class="oy-ekle" style="height: 1.75em; " onclick="incrementG()">Oy Ekle</button>
+        <button class="oy-çıkar" style="height: 3.25em; "  onclick="decrementG()">Oy Çıkar</button>
+    </div>
+    
+
+</body>
